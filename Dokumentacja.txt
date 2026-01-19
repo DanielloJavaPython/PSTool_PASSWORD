@@ -1,0 +1,51 @@
+JAK UŻYWAĆ
+
+NA KOMPUTERACH UŻYTKOWNIKÓW (PC użytkowników)
+
+1.  Należy dodać wpis w rejestrze systemu Windows. Do tego celu użyj
+    pliku: napc.reg
+
+2.  W Zaporze systemu Windows dodaj nową regułę: (wf.msc wyszukaj to)
+
+    -   Nowa reguła
+    -   Uprzednio zdefiniowane
+    -   Z listy wybierz: Zdalne zarządzanie usługami
+    -   Zaznacz wszystkie pola wyboru (checkboxy)
+
+Po wykonaniu powyższych kroków uruchom ponownie komputer.
+
+NA KOMPUTERZE ADMINISTRATORA (PC admina)
+
+1.  Uruchom plik wykonywalny i postępuj zgodnie z instrukcjami.
+2.  W pliku list_pc.txt wpisz nazwy komputerów, każda nazwa w osobnej
+    linii, np.:
+PC1
+PC2
+PC3
+
+
+
+
+
+
+
+(OPCJONALNIE – NIEKONIECZNE)
+
+W celu poprawienia szybkości działania można dodać w Zaporze systemu
+Windows następujące reguły:
+
+1.  Nowa reguła → Port
+    -   Protokół: TCP
+    -   Port: 445
+    -   Akcja: Zezwalaj na połączenie
+    -   Nazwa: np. TCP/445
+2.  Nowa reguła → Port
+    -   Protokół: UDP
+    -   Port: 137
+    -   Akcja: Zezwalaj na połączenie
+    -   Nazwa: np. UDP/137
+
+W obu przypadkach należy ustawić Zdalny adres IP jako adres komputera
+administratora (komputera, który zmienia hasła itp.).
+
+
